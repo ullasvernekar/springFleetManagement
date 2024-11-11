@@ -1,0 +1,93 @@
+2024-08-05 16:51:32 - Starting BoboLikeApplication using Java 22.0.2 with PID 16680 (C:\Projects\BoboLike\BoboLike\target\classes started by ullas in C:\Projects\BoboLike\BoboLike)
+2024-08-05 16:51:32 - No active profile set, falling back to 1 default profile: "default"
+2024-08-05 16:51:33 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-05 16:51:34 - Finished Spring Data repository scanning in 105 ms. Found 5 JPA repository interfaces.
+2024-08-05 16:51:35 - Tomcat initialized with port 8080 (http)
+2024-08-05 16:51:35 - Starting service [Tomcat]
+2024-08-05 16:51:35 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05 16:51:35 - Initializing Spring embedded WebApplicationContext
+2024-08-05 16:51:35 - Root WebApplicationContext: initialization completed in 3281 ms
+2024-08-05 16:51:36 - HikariPool-1 - Starting...
+2024-08-05 16:51:36 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d99ee1b
+2024-08-05 16:51:36 - HikariPool-1 - Start completed.
+2024-08-05 16:51:36 - Database: jdbc:mysql://localhost:3306/BoboLike (MySQL 8.0)
+2024-08-05 16:51:37 - Successfully validated 2 migrations (execution time 00:00.107s)
+2024-08-05 16:51:37 - Current version of schema `bobolike`: 2
+2024-08-05 16:51:37 - Schema `bobolike` is up to date. No migration necessary.
+2024-08-05 16:51:37 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-05 16:51:37 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-05 16:51:37 - HHH000026: Second-level cache disabled
+2024-08-05 16:51:38 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-05 16:51:38 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-05 16:51:38 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-05 16:51:39 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-05 16:51:40 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05 16:51:41 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-05 16:51:41 - 27 mappings in 'requestMappingHandlerMapping'
+2024-08-05 16:51:42 - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-08-05 16:51:42 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-05 16:51:42 - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-05 16:51:43 - Tomcat started on port 8080 (http) with context path '/'
+2024-08-05 16:51:43 - Started BoboLikeApplication in 12.456 seconds (process running for 13.294)
+2024-08-05 16:52:00 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05 16:52:00 - Initializing Servlet 'dispatcherServlet'
+2024-08-05 16:52:00 - Detected StandardServletMultipartResolver
+2024-08-05 16:52:00 - Detected AcceptHeaderLocaleResolver
+2024-08-05 16:52:00 - Detected FixedThemeResolver
+2024-08-05 16:52:00 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5ed1bc4f
+2024-08-05 16:52:00 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@50915d5
+2024-08-05 16:52:00 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-05 16:52:00 - Completed initialization in 3 ms
+2024-08-05 16:52:00 - POST "/vehicle/save", parameters={}
+2024-08-05 16:52:00 - Mapped to com.ot.BoboLike.controller.VehicleController#save(VehicleRegister)
+2024-08-05 16:52:00 - Read "application/json;charset=UTF-8" to [VehicleRegister(vehicleName=string, vehicleNumber=string, modelOfYear=string, vehicleType=string, fu (truncated)...]
+2024-08-05 16:52:00 - Starting saveVehicle method with vehicle number plate: string
+2024-08-05 16:52:01 - Vehicle with number plate string already exists
+2024-08-05 16:52:01 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-05 16:52:01 - Writing [com.ot.BoboLike.dto.ResponseStructure@7c2181d7]
+2024-08-05 16:52:01 - Completed 409 CONFLICT
+2024-08-05 16:55:49 - POST "/vehicle/save", parameters={}
+2024-08-05 16:55:49 - Mapped to com.ot.BoboLike.controller.VehicleController#save(VehicleRegister)
+2024-08-05 16:55:49 - Read "application/json;charset=UTF-8" to [VehicleRegister(vehicleName=string, vehicleNumber=HUHU78990, modelOfYear=2019, vehicleType=string, f (truncated)...]
+2024-08-05 16:55:49 - Starting saveVehicle method with vehicle number plate: HUHU78990
+2024-08-05 16:55:49 - Vehicle saved successfully with ID: 4
+2024-08-05 16:55:49 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-05 16:55:49 - Writing [com.ot.BoboLike.dto.ResponseStructure@5c4f23a2]
+2024-08-05 16:55:49 - Completed 201 CREATED
+2024-08-05 17:13:53 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05 17:13:53 - HikariPool-1 - Shutdown initiated...
+2024-08-05 17:13:53 - HikariPool-1 - Shutdown completed.
+2024-08-05 17:19:55 - Starting BoboLikeApplication using Java 22.0.2 with PID 11432 (C:\Projects\BoboLike\BoboLike\target\classes started by ullas in C:\Projects\BoboLike\BoboLike)
+2024-08-05 17:19:55 - No active profile set, falling back to 1 default profile: "default"
+2024-08-05 17:19:57 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-05 17:19:57 - Finished Spring Data repository scanning in 121 ms. Found 5 JPA repository interfaces.
+2024-08-05 17:19:58 - Tomcat initialized with port 8080 (http)
+2024-08-05 17:19:58 - Starting service [Tomcat]
+2024-08-05 17:19:58 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05 17:19:58 - Initializing Spring embedded WebApplicationContext
+2024-08-05 17:19:58 - Root WebApplicationContext: initialization completed in 3364 ms
+2024-08-05 17:19:59 - HikariPool-1 - Starting...
+2024-08-05 17:20:00 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3915e7c3
+2024-08-05 17:20:00 - HikariPool-1 - Start completed.
+2024-08-05 17:20:00 - Database: jdbc:mysql://localhost:3306/BoboLike (MySQL 8.0)
+2024-08-05 17:20:00 - Successfully validated 2 migrations (execution time 00:00.084s)
+2024-08-05 17:20:00 - Current version of schema `bobolike`: 2
+2024-08-05 17:20:00 - Schema `bobolike` is up to date. No migration necessary.
+2024-08-05 17:20:00 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-05 17:20:01 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-05 17:20:01 - HHH000026: Second-level cache disabled
+2024-08-05 17:20:01 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-05 17:20:01 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-05 17:20:01 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-05 17:20:03 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-05 17:20:03 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05 17:20:04 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-05 17:20:05 - 27 mappings in 'requestMappingHandlerMapping'
+2024-08-05 17:20:06 - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-08-05 17:20:06 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-05 17:20:06 - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-05 17:20:07 - Tomcat started on port 8080 (http) with context path '/'
+2024-08-05 17:20:07 - Started BoboLikeApplication in 12.871 seconds (process running for 13.677)
+2024-08-05 17:20:25 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05 17:20:25 - HikariPool-1 - Shutdown initiated...
+2024-08-05 17:20:25 - HikariPool-1 - Shutdown completed.
